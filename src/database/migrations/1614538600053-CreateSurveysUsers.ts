@@ -21,7 +21,7 @@ export class CreateSurveysUsers1614538600053 implements MigrationInterface {
                         type: "uuid"
                     },
                     {
-                        name:"value",
+                        name:"valor",
                         type: "number",
                         isNullable:true
                     },
@@ -34,7 +34,7 @@ export class CreateSurveysUsers1614538600053 implements MigrationInterface {
                 foreignKeys :[
                     {
                         name:"FKUser",
-                        referencedTableName: "user",
+                        referencedTableName: "users",
                         referencedColumnNames : ["id"],
                         columnNames: ["user_id"],
                         onDelete: "CASCADE",
